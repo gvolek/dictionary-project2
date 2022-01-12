@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
+import "./Phonetic.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -26,9 +27,16 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" autoFocus={true} onChange={handleKeywordChange} />
-      </form>
+      <section>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            autoFocus={true}
+            onChange={handleKeywordChange}
+          />
+        </form>
+        <div className="hint">word must be spelled correctly & in English</div>
+      </section>
       <Results results={results} />
     </div>
   );
