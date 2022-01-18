@@ -1,6 +1,9 @@
 .App {
   background-color: lightslategray;
 }
+.App h1 {
+  text-align: center;
+}
 .App-header {
   margin: 30px;
 }

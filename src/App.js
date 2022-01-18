@@ -7,6 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
+          <h1>Gema's Dictionary</h1>
           <img src={gemaimg} className="Gema-img img-fluid" alt="gema img" />
         </header>
         <main>
